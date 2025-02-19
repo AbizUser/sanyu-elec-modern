@@ -8,11 +8,12 @@ import { Card, CardContent } from "@/components/ui/card"
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
+
       {/* ヒーローセクション */}
-      <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden bg-black">
+      <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden bg-black ">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/urban-skyline.jpg?height=1080&width=1920"
             alt="電気工事現場"
             width={1920}
             height={1080}
@@ -21,13 +22,13 @@ export default function Home() {
           />
         </div>
         <div className="container relative z-10 mx-auto px-4 text-center text-white">
-          <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+          <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl ">
             確かな技術で、
             <br />
             未来を明るく照らす
           </h1>
           <p className="mb-8 text-lg text-gray-300 sm:text-xl">
-            創業55年の実績と信頼。あらゆる電気設備工事に対応します。
+            創業60年の実績と信頼。あらゆる電気設備工事に対応します。
           </p>
           <Button asChild size="lg" className="bg-white text-black hover:bg-gray-100">
             <Link href="#contact">
@@ -78,9 +79,9 @@ export default function Home() {
           <div className="mx-auto max-w-3xl space-y-8">
             <div className="grid gap-4 md:grid-cols-2">
               <div className="font-semibold">社名</div>
-              <div>株式会社〇〇電気</div>
+              <div>三友電業社</div>
               <div className="font-semibold">設立</div>
-              <div>2004年4月</div>
+              <div>19XX年4月</div>
               <div className="font-semibold">資本金</div>
               <div>2,000万円</div>
               <div className="font-semibold">従業員数</div>
@@ -106,7 +107,7 @@ export default function Home() {
             {[1, 2, 3].map((i) => (
               <div key={i} className="overflow-hidden rounded-lg">
                 <Image
-                  src={`/placeholder.svg?height=400&width=600`}
+                  src={`/placeholder.png?height=400&width=600`}
                   alt={`施工実績 ${i}`}
                   width={600}
                   height={400}
@@ -148,7 +149,7 @@ export default function Home() {
       {/* フッター */}
       <footer className="border-t py-8">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© 2025 株式会社〇〇電気 All Rights Reserved.</p>
+          <p>© 2025 三友電業社 All Rights Reserved.</p>
         </div>
       </footer>
     </div>
